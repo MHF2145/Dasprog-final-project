@@ -15,12 +15,12 @@ void mhssw()
 	
 		struct isi_mhssw isimhssw = {0, 0, "", "", ""};
 	
-	printf("//Nama\t\tNIM\t\tEmail\t\tDepartemen\t\t\tIPS\\\n");
-	printf("||====\t\t===\t\t=====\t\t==========\t\t\t===||\n");
-	
+	printf("\n\n//Nama\t\t\tNIM\t\t\tEmail\t\t\tDepartemen\t\t\tIPS \\\\ \n");
+	printf("||==========================================================================================================||\n");
+		
 	while(fread(&isimhssw, sizeof(isimhssw), 1, fp) == 1)
 	{
-		printf("||%-20s\t\t%-20d\t\t%s\t\t%s\t\t%.2f||\n\n", isimhssw.nama, isimhssw.nim, isimhssw.email, isimhssw.departemen, isimhssw.ips);
+		printf("||%s\t\t\t%d\t\t\t%s\t\t%s\t\t\t%.2f||\n", isimhssw.nama, isimhssw.nim, isimhssw.email, isimhssw.departemen, isimhssw.ips);
 	}
 	
 	if(ferror(fp))

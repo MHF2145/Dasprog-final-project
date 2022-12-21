@@ -15,12 +15,12 @@ void dosen()
 	
 	struct isi_dosen isidosen = {0, "", "", ""};
 	
-	printf("//Nama\t\tNIM\t\tEmail\t\tDepartemen\\\n");
-	printf("||====\t\t===\t\t=====\t\t==========||\n");
+	printf("\n\n//Nama\t\t\tNIM\t\tEmail\t\t\t\tDepartemen\t\\\\\n");
+	printf("||======================================================================================||\n");
 	
 	while(fread(&isidosen, sizeof(isidosen), 1, fp) == 1)
 	{
-		printf("||%s\t\t%d\t\t%s\t\t%s||\n\n", isidosen.nama, isidosen.nim, isidosen.email, isidosen.departemen);
+		printf("||%s\t\t%d\t\t%s\t\t%s\t\t||\n", isidosen.nama, isidosen.nim, isidosen.email, isidosen.departemen);
 	}
 	
 	if(ferror(fp))

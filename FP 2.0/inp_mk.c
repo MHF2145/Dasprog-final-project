@@ -29,10 +29,10 @@ void inp_mk()
 			}
 			else
 			{
-				printf("Masukkan nama Mata Kuliah:\n");
+				printf("Masukkan nama Mata Kuliah(Singkat):\n");
 				scanf("%s",&isimk.mk);
 				
-				printf("Masukkan nama Dosen Pengajar:\n");
+				printf("Masukkan nama Dosen Pengajar(Panggilan):\n");
 				scanf("%s",&isimk.dosen);
 								
 				printf("Masukkan Jumlah Mahasiswa:\n");

@@ -29,7 +29,7 @@ void inp_mhssw()
 			}
 			else
 			{
-				printf("Masukkan nama Mahasiswa:\n");
+				printf("Masukkan nama Mahasiswa(Panggilan):\n");
 				scanf("%s",&isimhssw.nama);
 				
 				printf("Masukkan Email Mahasiwa:\n");
@@ -38,7 +38,7 @@ void inp_mhssw()
 				printf("Masukkan nama Departemen:\n");
 				scanf("%s",&isimhssw.departemen);
 				
-				printf("Masukkan nilai IPS(nilai IPS bulat):\n");
+				printf("Masukkan nilai IPS(koma diganti titik):\n");
 				scanf("%f",&isimhssw.ips);
 				
 				size_t hasil = fwrite(&isimhssw, sizeof(isimhssw), 1, fp);

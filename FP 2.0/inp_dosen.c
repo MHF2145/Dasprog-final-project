@@ -29,7 +29,7 @@ void inp_dosen()
 			}
 			else
 			{
-				printf("Masukkan nama Dosen:\n");
+				printf("Masukkan nama Dosen(Panggilan):\n");
 				scanf("%s",&isidosen.nama);
 				
 				printf("Masukkan Email Dosen:\n");
